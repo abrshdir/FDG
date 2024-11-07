@@ -1,0 +1,51 @@
+:host {
+  mat-grid-tile {
+    border-radius: 20px;
+    border: 1px solid #282828;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  mat-tab-group {
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  mat-expansion-panel {
+    width: 100%;
+    background: rgba(87, 123, 213, 0.13);
+    height: inherit;
+    z-index: 0;
+  }
+
+  mat-grid-tile-header {
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    z-index: 0;
+  }
+
+  mat-grid-tile-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    overflow: scroll;
+    padding: 10px;
+
+    .row {
+      float: left;
+    }
+  }
+
+
+}

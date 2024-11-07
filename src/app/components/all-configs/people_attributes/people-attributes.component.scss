@@ -1,0 +1,33 @@
+:host {
+  .mat-column-name {
+    background: #11161F;
+  }
+  table {
+    background: transparent;
+    overflow: scroll;
+    td {
+      font-size: 10px;
+    }
+    tr {
+      width: 100%;
+      overflow: scroll;
+    }
+
+    input {
+      background: transparent;
+      color: white;
+      padding: 5px;
+      border-left: 0.1px solid rgba(255, 255, 255, 0.099);
+      border-bottom: 0.1px solid rgba(255, 255, 255, 0.099);
+      border-radius: 5px;
+    }
+
+  }
+  .container{
+    padding: 20px;
+  }
+  .mat-elevation-z7{
+    height: 100%;
+    overflow: scroll;
+  }
+}

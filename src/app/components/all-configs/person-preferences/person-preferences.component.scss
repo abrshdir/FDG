@@ -1,0 +1,35 @@
+:host {
+  .mat-column-name {
+    background: #11161F;
+  }
+
+  ::ng-deep .example-panel .mat-option {
+    color: white !important;
+  }
+
+  input {
+    background: transparent;
+    color: white;
+    padding: 5px;
+    border-left: 0.1px solid rgba(255, 255, 255, 0.099);
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.099);
+    border-radius: 5px;
+  }
+  table {
+    background: transparent;
+    overflow: scroll;
+    mat-option {
+      color: white;
+    }
+    td {
+      font-size: 10px;
+    }
+    tr {
+      width: 100%;
+      overflow: scroll;
+    }
+  }
+  .container{
+    padding: 20px;
+  }
+}

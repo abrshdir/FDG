@@ -1,0 +1,43 @@
+<div class="main-content">
+  <mat-grid-list [cols]="total_cols" [gutterSize]="'15'" rowHeight="49vh">
+    <mat-grid-tile [colspan]="col" [rowspan]="row" [style.margin]="'0'">
+      <mat-grid-tile-header [style.height]="panelOpenState ? '15vh' : 'auto'">
+        <mat-expansion-panel [style.background-color]="panelOpenState ? '#1D2434' : 'transparent'" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="item-title">Measure of coincidence</div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <app-measure-info></app-measure-info>
+        </mat-expansion-panel>
+      </mat-grid-tile-header>
+      <app-force-graph></app-force-graph>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="col" [rowspan]="1">
+      <mat-tab-group>
+        <mat-tab label="Grouped Attributes">
+          <div class="mat-elevation-z4">
+            <app-people-preference></app-people-preference>
+          </div>
+        </mat-tab>
+        <mat-tab label="Selected Preference">
+          <div class="mat-elevation-z4">
+            <app-person-attribute></app-person-attribute>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="col" [rowspan]="1">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <app-attribute-selector></app-attribute-selector>
+          </div>
+          <div class="col">
+            <app-form-configuration></app-form-configuration>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

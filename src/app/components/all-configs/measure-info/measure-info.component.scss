@@ -1,0 +1,70 @@
+:host {
+  .legend-container {
+    display: flex;
+    justify-content: space-around;
+    .leyend {
+      display: flex;
+      justify-content: space-around;
+      width: inherit;
+      @media screen and (max-width: 500px) {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .reference {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        .title {
+          font-size: 10px;
+          color: white;
+          @media screen and (max-width: 500px) {
+            display: flex;
+            justify-content: center;
+            width: 90px;
+            font-size: 10px;
+          }
+        }
+        .grouped {
+          display: flex;
+          flex-direction: column;
+        }
+        .description {
+          width: 30px;
+          text-align: center;
+          color: white;
+        }
+        .color {
+          border-radius: 20px;
+          height: 10px;
+          width: 80px;
+          @media screen and (max-width: 500px) {
+            width: 40px;
+          }
+        }
+        .person {
+          background: linear-gradient(270deg, rgb(255, 200, 0) 0%, rgb(255, 0, 0) 100%);
+        }
+        .attribute {
+          background: linear-gradient(270deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+        }
+        .preference {
+          background: linear-gradient(270deg, rgb(0, 0, 255) 0%, rgb(255, 0, 255) 100%);
+        }
+        .person_color {
+          color: rgb(255, 200, 0);
+        }
+        .attr_color {
+          color: rgb(0, 0, 0);
+        }
+        .pref_color {
+          color: #5866b7;
+        }
+      }
+    }
+  }
+}

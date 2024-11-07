@@ -1,0 +1,117 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  overflow: scroll;
+
+  .mdc-button__label{
+    color: white
+  }
+
+
+  .form-container {
+    width: 100%;
+    height: 100%;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 10px;
+
+      .item-title {
+        font-size: 20px;
+        color: white;
+      }
+
+      .attributes {
+        width: 100%;
+        font-size: 10px;
+
+        mat-button-toggle-group {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          font-size: 10px;
+
+          mat-button-toggle {
+            width: 200px;
+            height: 38px;
+            border-left: 0.1px solid rgba(255, 255, 255, 0.099);
+            border-bottom: 0.1px solid rgba(255, 255, 255, 0.099);
+
+            font-size: 10px;
+
+          }
+        }
+      }
+
+      mat-form-field {
+        width: 155px;
+        height: 25px;
+        margin: 10px 5px;
+
+        input {
+          font-size: 12px
+        }
+
+        mat-select {
+          font-size: 12px
+        }
+
+        mat-label {
+          font-size: 15px
+        }
+
+        mat-option {
+          span {
+            background: red;
+            font-size: 12px
+          }
+        }
+
+      }
+
+      mat-label {
+        font-size: 10px;
+      }
+
+      button {
+        width: 158px;
+        color: white !important;
+        height: 36px;
+        margin-top: 10px;
+        background-color: #3F51B5;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #777777;
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+}
+
+span .mdc-button__label{
+  color: white;
+}

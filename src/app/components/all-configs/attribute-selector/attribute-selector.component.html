@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="item-title">Select at least 3 attributes ({{ attributesForm.get('attributes').value.length }} selected). Enter the configuration in the fields.</div>
+  </div>
+  <div class="row">
+    <form [formGroup]="attributesForm" (ngSubmit)="submitForm()">
+      <mat-chip-listbox formControlName="attributes" multiple>
+        <mat-chip-option *ngFor="let item of qualities" [selected]="isSelected(item)" (click)="toggleSelection(item)">
+          {{ item }}
+        </mat-chip-option>
+      </mat-chip-listbox>
+    </form>
+  </div>
+</div>

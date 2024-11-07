@@ -1,0 +1,73 @@
+<div class='form-container'>
+  <form (ngSubmit)='submitForm()' [formGroup]='graphForm'>
+    <mat-form-field appearance='outline'>
+      <mat-label>N° Persons</mat-label>
+      <input formControlName='nodeGroupAmount' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Person Selected</mat-label>
+      <mat-select formControlName='idPersonSelected'>
+        <mat-option *ngFor='let person of persons; let i = index' [value]='person.id'> {{ person.name }} </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Persons Distance</mat-label>
+      <input formControlName='personsDistanceProportion' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Attributes Distance</mat-label>
+      <input formControlName='attributesDistanceProportion' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Opacity Aura</mat-label>
+      <input formControlName='opacityAura' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>% Defined Attributes</mat-label>
+      <input formControlName='percentDefinedAttributes' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Strength</mat-label>
+      <input formControlName='strengthGraph' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Max. Aura Radio</mat-label>
+      <input formControlName='maxAuraRadio' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Size Attribute Nodes</mat-label>
+      <input formControlName='valueAttributeNode' matInput type='number' />
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Full Color Attribute</mat-label>
+      <mat-select formControlName='fullColorAttributeNodes'>
+        <mat-option [value]='true'> True</mat-option>
+        <mat-option [value]='false'> False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Show names</mat-label>
+      <mat-select formControlName='showNames'>
+        <mat-option [value]='true'> True</mat-option>
+        <mat-option [value]='false'> False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance='outline'>
+      <mat-label>Stiffness</mat-label>
+      <input formControlName='stiffness' matInput type='number' />
+    </mat-form-field>
+
+    <button mat-stroked-button type='submit'>Enter data</button>
+  </form>
+</div>
